@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Veuillez vous connectez</h2>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Connexion</button>
+    
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="./img/lezard.jpg" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Nom d'utilisateur</b></label>
+          <input type="text" placeholder="Entrer votre nom d'utilisateur" name="uname" required>
+    
+          <label for="psw"><b>Mot de passe</b></label>
+          <input type="password" placeholder="Entrer votre mot de passe" name="psw" required>
+            
+          <button type="submit">Connexion</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Retour</button>
+          <span class="psw"> <a href="#">Mot de passe oublier ?</a></span>
+        </div>
+      </form>
+    </div>
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+   </form>
+ </div> 
+</body>
+</html>
